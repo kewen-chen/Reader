@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="#fafafa"
+    android:foreground="?android:selectableItemBackground"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+
+            android:id="@+id/linear"
+            android:layout_below="@id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.3">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/about_us"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentEnd="false"
+                android:layout_gravity="top"
+                android:layout_marginTop="10dip" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.02">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="王尚堃 . 李奎霖 . 汪立阳 . 鲁登科 (从左到右)"
+                android:layout_alignParentBottom="true"
+                android:textSize="8sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/textView3"
+                android:layout_marginRight="20dip"
+                android:layout_gravity="right" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我们是Android菜鸟饭团第一期的成员，在校生。2015年4月我们以技术小白的身份加入饭团，参加南阳GDG的日常活动。在课余时间一起走过了Java基础、Udacity Android、开源APP三个学习阶段，在参加关于Material Design的一场活动时，我们突发奇想， 得到南阳GDG的帮助并完成了这个Demo。"
+                android:textSize="14sp"
+                android:layout_above="@+id/textView3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="20dip"
+                android:layout_marginRight="20dip" />
+
+            <TextView
+                android:id="@+id/text_m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我们还离Google Play有段距离，但能有一个自己的App上架Play是我们的最终目标。"
+                android:textSize="14sp"
+                android:layout_above="@+id/textView3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="10dip" />
+
+            <TextView
+                android:id="@+id/text_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="感谢南阳GDG和Android菜鸟饭团，我们愿意分享让更多的人开始学习Android和Material Design。"
+                android:textSize="14sp"
+                android:layout_above="@+id/textView3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="10dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="10dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="南阳GDG官网: www.gdgny.org"
+                android:id="@+id/textView"
+                android:layout_above="@+id/textView2"
+                android:layout_alignRight="@+id/textView2"
+                android:layout_alignEnd="@+id/textView2"
+                android:textSize="12sp"
+                android:layout_gravity="left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="南阳GDG/Android菜鸟饭团1期"
+                android:textSize="12sp"
+                android:id="@+id/textView2"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="false"
+                android:layout_gravity="left" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
